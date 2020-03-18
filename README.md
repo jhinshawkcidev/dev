@@ -20,7 +20,9 @@ _These PowerShell scripts are intended to be used within SharePoint Online assum
   > https://github.com/jhinshawkcidev/dev/wiki/How-to-create-a-Windows-Credential
 
 ***
-SPOScript-DocumentSiteCollections.ps1
+### SPOScript-DocumentSiteCollections.ps1
 
+* Replace the $siteUrl variable with your SharePoint site
+* $excludedUrlsArray is an array of all URLs that should not be included within the script, this is helpful so as not to slow the script down if looping through subsites, apps, and items.
 
 ***
