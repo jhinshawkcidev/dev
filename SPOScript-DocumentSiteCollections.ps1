@@ -3,9 +3,7 @@
 #> 
 
 Install-Module SharePointPnPPowerShellOnline
-$outFile1 = "C:\temp\Outfile1-Desc.csv"  
-$outFile2 = "C:\temp\Outfile2-Desc.csv"  
-$outFile3 = "C:\temp\Outfile3-Desc.csv"  
+$outFile1 = "C:\temp\Outfile1-SiteCollections.csv"  
 $siteUrl  = "https://jhinshawkci.sharepoint.com"  # This is also the Credential, as long you're using PowerShell 5 and have Windows Credential Manager
 
 #URL Property to exclude, best to keep this collapsed
