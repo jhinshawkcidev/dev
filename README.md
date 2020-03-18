@@ -33,7 +33,7 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentSites.ps1
 * `$excludedUrlsArray` is an array of all URLs that should not be included within the script, this is helpful so as not to slow the script down if looping through subsites, apps, and items.
 
 ***
-### `SPOScript-DocumentSites.ps1`
+### `SPOScript-DocumentApps.ps1`
 https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentApps.ps1
 * Accomplishes the same tasks as `SPOScript-DocumentSites.ps1`, but includes Apps in a separate CSV file
 * Replace the `$siteUrl` variable with your SharePoint site
