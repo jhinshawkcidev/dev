@@ -10,7 +10,8 @@ $siteUrl  = "https://jhinshawkci.sharepoint.com"  # This is also the Credential,
 $excludedUrlsArray = @(
     "https://jhinshawkci.sharepoint.com/portals/Community",
     "https://jhinshawkci.sharepoint.com/portals/hub",
-    "https://jhinshawkci.sharepoint.com/search"
+    "https://jhinshawkci.sharepoint.com/search",
+    "https://jhinshawkci-my.sharepoint.com/"
 )
 
 # Return site collections function
