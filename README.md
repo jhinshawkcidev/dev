@@ -26,8 +26,8 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentSiteCollecti
 * `$excludedUrlsArray` is an array of all URLs that should not be included within the script, this is helpful so as not to slow the script down if looping through subsites, apps, and items.
 
 ***
-### `SPOScript-DocumentSubsites.ps1`
-https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentSubsites.ps1
+### `SPOScript-DocumentSites.ps1`
+https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentSites.ps1
 * Accomplishes the same tasks as `SPOScript-DocumentSiteCollections.ps1`, but includes Subsites
 * Replace the `$siteUrl` variable with your SharePoint site
 * `$excludedUrlsArray` is an array of all URLs that should not be included within the script, this is helpful so as not to slow the script down if looping through subsites, apps, and items.
