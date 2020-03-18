@@ -12,7 +12,7 @@ _These PowerShell scripts are intended to be used within SharePoint Online assum
   https://github.com/PowerShell/PowerShell
 3. Install Visual Studio Code
   https://code.visualstudio.com/download
-   > Install PowerShell Extension as well
+   Install PowerShell Extension as well
 3. Create a Windows Credential
   https://github.com/SharePoint/PnP-PowerShell/wiki/How-to-use-the-Windows-Credential-Manager-to-ease-authentication-with-PnP-PowerShell
 
