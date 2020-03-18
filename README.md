@@ -15,8 +15,7 @@ _These PowerShell scripts are intended to be used within SharePoint Online assum
   > https://code.visualstudio.com/download
   > Install PowerShell Extension as well
 3. Create a Windows Credential
-  > https://github.com/SharePoint/PnP-PowerShell/wiki/How-to-use-the-Windows-Credential-Manager-to-ease-authentication-with-PnP-PowerShell
-  > I do not think this guide is clear enough and will replace it with my own.
+  > https://github.com/jhinshawkcidev/dev/wiki/How-to-create-a-Windows-Credential
 
 ***
 SPOScript-DocumentSiteCollections.ps1
