@@ -1,5 +1,5 @@
 <#
-.\SPOScript-DocumentSubsites.ps1
+.\SPOScript-DocumentSites.ps1
 #> 
 
 Install-Module SharePointPnPPowerShellOnline
@@ -14,8 +14,8 @@ $excludedUrlsArray = @(
     "https://jhinshawkci-my.sharepoint.com/"
 )
 
-# Return site collections function
-function DocumentSiteCollections($TenantUrl, $ExcludedUrls) {
+# Return site collections and subsites function
+function DocumentSites($TenantUrl, $ExcludedUrls) {
     $hashTable1 = @()
     Connect-PnPOnline -Url $TenantUrl -Credentials $TenantUrl
     $allSiteCollections = Get-PnPTenantSite
@@ -54,9 +54,9 @@ function DocumentSiteCollections($TenantUrl, $ExcludedUrls) {
     return $hashTable1
 }
 
-# Return site collections - call function
+# Return site collections and subsites - call function
 Write-Host "`t> Running Functions..." -ForegroundColor DarkYellow
-$allSites  = DocumentSiteCollections -TenantUrl $siteUrl -ExcludedUrls $excludedUrlsArray 
+$allSites  = DocumentSites -TenantUrl $siteUrl -ExcludedUrls $excludedUrlsArray 
 $allSites  | Export-csv -Path $outFile1 -Append -Force
 
 Write-Host "`n`tComplete!`n" -ForegroundColor Green
