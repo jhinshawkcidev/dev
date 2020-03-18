@@ -9,6 +9,7 @@ $siteUrl  = "https://jhinshawkci.sharepoint.com"  # This is also the Credential,
 #URL Property to exclude, best to keep this collapsed
 $excludedUrlsArray = @(
     "https://jhinshawkci.sharepoint.com/portals/Community",
+    "https://jhinshawkci.sharepoint.com/sites/AppCatalog",
     "https://jhinshawkci.sharepoint.com/portals/hub",
     "https://jhinshawkci.sharepoint.com/search",
     "https://jhinshawkci-my.sharepoint.com/"
