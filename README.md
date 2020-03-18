@@ -11,12 +11,12 @@ _These PowerShell scripts are intended to be used within SharePoint Online assum
 2. Install PowerShell 5
   > https://github.com/PowerShell/PowerShell
   
-  > Recent PowerShell versions are not compatible with PnP cmdlets
+  > _Recent PowerShell versions are not compatible with PnP cmdlets_
 3. Install Visual Studio Code
   > https://code.visualstudio.com/download
   
-  > Install PowerShell Extension as well
-3. Create a Windows Credential
+  > _Install PowerShell Extension as well_
+4. Create a Windows Credential
   > https://github.com/jhinshawkcidev/dev/wiki/How-to-create-a-Windows-Credential
 
 ***
