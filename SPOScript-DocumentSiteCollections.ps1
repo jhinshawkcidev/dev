@@ -12,26 +12,7 @@ $siteUrl  = "https://jhinshawkci.sharepoint.com"  # This is also the Credential,
 $excludedUrlsArray = @(
     "https://jhinshawkci.sharepoint.com/portals/Community",
     "https://jhinshawkci.sharepoint.com/portals/hub",
-    "https://jhinshawkci.sharepoint.com/search",
-    "https://jhinshawkci.sharepoint.com/sites/allcompany",
-    "https://jhinshawkci.sharepoint.com/sites/AppCatalog",
-    "https://jhinshawkci.sharepoint.com/sites/KieferConsulting",
-    "https://jhinshawkci.sharepoint.com/sites/KieferConsulting52",
-    "https://jhinshawkci.sharepoint.com/sites/KieferConsulting77",
-    "https://jhinshawkci.sharepoint.com/sites/KieferConsulting79",
-    "https://jhinshawkci.sharepoint.com/sites/KieferConsulting9",
-    "https://jhinshawkci.sharepoint.com/sites/KieferConsultingInc",
-    "https://jhinshawkci.sharepoint.com/sites/Overview",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam2",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam249",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam52",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam77",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam79",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam843",
-    "https://jhinshawkci.sharepoint.com/sites/PrivateTeam9",
-    "https://jhinshawkci.sharepoint.com/sites/Team",
-    "https://jhinshawkci.sharepoint.com/sites/test2",
-    "https://jhinshawkci-my.sharepoint.com/"
+    "https://jhinshawkci.sharepoint.com/search"
 )
 
 # Return site collections function
