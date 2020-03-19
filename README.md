@@ -51,8 +51,8 @@ https://github.com/jhinshawkcidev/dev/edit/master/SPOScript-DocumentSiteColumns.
 - This code is for reference only, it returns too many site columns and I will need to adjust it to only return ones that are necessary.
 
 ***
-### `SPOScript-DocumentListItems.ps1`
-https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItems.ps1
+### `SPOScript-DocumentListItemFieldValues.ps1`
+https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFieldValues.ps1
 - Prints the Field Values, or properties, of each list item within a single list
 - Replace the `$siteUrl` variable with your SharePoint site
 - Replace the `$listId` variable with your list, acceptable values can be found with `Get-PnPList` cmdlet
