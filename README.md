@@ -56,6 +56,6 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFiel
 - Prints the Field Values, or properties, of each list item within a single list
 - Replace the `$siteUrl` variable with your SharePoint site
 - Replace the `$listId` variable with your list, acceptable values can be found with `Get-PnPList` cmdlet documentation
- - Field Values differ across lists, `    $FieldValues = (Get-PnPListItem -List $List).FieldValues` will return the possible Field Values (such as Title, ID, Modified, etc) for list items. 
+ - Field Values differ across lists, `    $FieldValues = (Get-PnPListItem -List $List).FieldValues` will return the possible Field Values (such as Title, ID, Modified, etc) for list items within the specified list. 
 
 ***
