@@ -10,7 +10,7 @@ $listId = "List Name, ID, or Relative URL"
 function DocumentListItems($TenantUrl) {
     Connect-PnPOnline -Url $TenantUrl -Credentials $TenantUrl
     $List = Get-PnPList -Identity $listId
-    $ListItems = (Get-PnPListItem -List $List).FieldValues
+    $ListItems = (Get-PnPListItem -List $List -Id 1).FieldValues
     foreach ($listItem in $ListItems) {
         Write-Host $listItem
     }
