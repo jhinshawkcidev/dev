@@ -8,23 +8,23 @@ _These PowerShell scripts are intended to be used within SharePoint Online assum
 ## Quick Start Guide
 1. **Create an O365 Trial Tenant**
 
-  ` >`https://aka.ms/e5trial 
+- https://aka.ms/e5trial 
 
 2. **Install PowerShell 5**
 
-  ` >`https://github.com/PowerShell/PowerShell
+- https://github.com/PowerShell/PowerShell
   
-  ` >` _Recent PowerShell versions are not compatible with PnP cmdlets_
+- _Recent PowerShell versions are not compatible with PnP cmdlets_
 
 3. **Install Visual Studio Code**
 
-  ` >`https://code.visualstudio.com/download
+- https://code.visualstudio.com/download
   
-  ` >`_Install PowerShell Extension as well_
+- _Install PowerShell Extension as well_
 
 4. **Create a Windows Credential**
 
-  ` >`https://github.com/jhinshawkcidev/dev/wiki/How-to-create-a-Windows-Credential
+- https://github.com/jhinshawkcidev/dev/wiki/How-to-create-a-Windows-Credential
 
 ***
 ### `SPOScript-DocumentSiteCollections.ps1`
