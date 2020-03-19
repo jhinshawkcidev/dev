@@ -42,3 +42,12 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentApps.ps1
 - `$excludedAppsArray` is an array of all Apps that should not be included within the script
 
 ***
+### `SPOScript-DocumentSiteColumns.ps1`
+https://github.com/jhinshawkcidev/dev/edit/master/SPOScript-DocumentSiteColumns.ps1
+- Accomplishes the same tasks as `SPOScript-DocumentApps.ps1`, but includes Apps + Site Columns in a separate CSV file
+- Replace the `$siteUrl` variable with your SharePoint site
+- `$excludedUrlsArray` is an array of all URLs that should not be included within the script
+- `$excludedAppsArray` is an array of all Apps that should not be included within the script
+- This code is for reference only, it returns too many site columns and I will need to adjust it to only return ones that are necessary.
+
+***
