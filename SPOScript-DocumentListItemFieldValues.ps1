@@ -1,5 +1,5 @@
 <#
-.\SPOScript-DocumentListItems.ps1
+.\SPOScript-DocumentListItemFieldValues.ps1
 #> 
 
 Install-Module SharePointPnPPowerShellOnline
