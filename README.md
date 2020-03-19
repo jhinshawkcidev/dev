@@ -56,5 +56,6 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFiel
 - Prints the Field Values, or properties, of each list item within a single list
 - Replace the `$siteUrl` variable with your SharePoint site
 - Replace the `$listId` variable with your list, acceptable values can be found with `Get-PnPList` cmdlet
+ - `Id -1` is included to return the first item in the list, though this will not work in all lists. If, for example, the first list item is deleted over time this Id parameter will have to be changed to a working number. I will need to adjust a fix for this.
 
 ***
