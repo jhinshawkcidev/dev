@@ -59,3 +59,17 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFiel
  - Field Values differ across lists, `    $FieldValues = (Get-PnPListItem -List $List).FieldValues` will return the possible Field Values (such as Title, ID, Modified, etc) for list items within the specified list. 
 
 ***
+### `SPOScript-UpdateSiteColumns.ps1`
+https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFieldValues.ps1
+- Creates or updates existing site columns based on .xlsx documentation
+- Replace the `$siteUrl` variable with your SharePoint site
+- Replace the `$sheet` variable with your .xlsx path, Column Headers should include:
+    - Group
+    - InternalName
+    - DisplayName
+    - Type
+    - Choices
+    - Formula
+ - This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on an excel table. I will continue testing this script out to see if it will allow for greater functionality.
+
+***
