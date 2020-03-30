@@ -77,7 +77,20 @@ Bloops|BloopColumn07|Bloop07|Currency
 Bloops|BloopColumn08|Bloop08|Calculated||[Title]
 
 - This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on an excel table. I will continue testing this script out to see if it will allow for greater functionality.  
-- Additional Column settings not included but should be::
+- Additional Column settings not included but should be:
+    - Description
+    - Required Field
+    - Enforce Unique Values
+    - Maximum number of characters
+    - Default Value
+        - Text
+        - Calculated Value
+    - Column Formatting (JSON)
+    - Update all list columns based on this site column?
+    - Column Validation
+        - Formula
+        - User Message
+    
 
 
 ***
