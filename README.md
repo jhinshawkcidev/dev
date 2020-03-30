@@ -110,9 +110,28 @@ Bloops|BloopColumn08|Bloop08|Calculated||[Title]
         - Today's Date
         - M/D/YYY
         - Calculated Value
-        
-    
-    
-
+     
+     - Display Choices using:
+        - Drop Down Menu
+        - Radio Buttons
+        - Checkboxes
+     - Allow 'Fill-in' Choices
+     
+     -Min/Max allowed Value
+          - Min
+          - Max
+     - Show as percentage
+          
+     - Default Value
+          - Currency
+          - Calculated Value
+     - Currency Format
+     
+     - Data type returned from forumla:
+          - Single line of text
+          - Number
+          - Currency
+          - Date and Time
+          - Yes/No
 
 ***
