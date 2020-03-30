@@ -76,6 +76,6 @@ Bloops|BloopColumn06|Bloop06|Number
 Bloops|BloopColumn07|Bloop07|Currency		
 Bloops|BloopColumn08|Bloop08|Calculated||[Title]
 
-- This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on the above table, then diving into each site column and configuring from there. Notice there are no description fields, default values, etc. I will try to work on this issue.
+- This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on the above table, then diving into each site column and configuring from there. Notice there are no description fields, default values, etc. I will try to work on this issue - however this would push the spreadsheet to having over 20 columns.
 
 ***
