@@ -76,7 +76,6 @@ Bloops|BloopColumn06|Bloop06|Number
 Bloops|BloopColumn07|Bloop07|Currency		
 Bloops|BloopColumn08|Bloop08|Calculated||[Title]
 
-- This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on an excel table. I will continue testing this script out to see if it will allow for greater functionality.  
-- Additional Column Settings are not included, such as a Description field, Required, Unique Values, Max character number, default value, etc. This becomes more complex with different column types such as number, currency, choice, etc.
+- This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on the above table, then diving into each site column and configuring from there. Notice there are no description fields, default values, etc. I will try to work on this issue.
 
 ***
