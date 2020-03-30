@@ -34,20 +34,22 @@ function ValidateSiteColumn($TenantUrl) {
 
 function CreateColumn($Row) {
 
-    Write-Host "`t> Creating Column..." -ForegroundColor DarkYellow
+    Write-Host "`t> Creating/Updating Column..." -ForegroundColor DarkYellow
     $Group = $Row.Group
     $InternalName = $Row.InternalName
     $DisplayName = $Row.DisplayName
     $Type = $Row.Type
+    $Description = $Row.Description
 
     $hashTable = @{
         Title = "$DisplayName";
         Group = "$Group";
         TypeAsString = "$Type"
+        Description = "$Description"
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Description $Description -ErrorAction Stop
     }
     catch {
         Set-PnPField -Identity $InternalName -Values $hashTable
@@ -56,11 +58,12 @@ function CreateColumn($Row) {
 
 function CreateChoiceColumn($Row) {
 
-    Write-Host "`t> Creating Choice Column..." -ForegroundColor DarkYellow
+    Write-Host "`t> Creating/Updating Choice Column..." -ForegroundColor DarkYellow
     $Group = $Row.Group
     $InternalName = $Row.InternalName
     $DisplayName = $Row.DisplayName
     $Type = $Row.Type
+    $Description = $Row.Description
     $rawChoices = $Row.Choices
     if ($rawChoices -Match ", ") {
         $formattedChoices = $rawChoices -split ", "
@@ -70,7 +73,7 @@ function CreateChoiceColumn($Row) {
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Choices $formattedChoices -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Description $Description -Choices $formattedChoices -ErrorAction Stop
     }
 
     catch {
@@ -79,6 +82,7 @@ function CreateChoiceColumn($Row) {
             Title = "$DisplayName";
             Group = "$Group";
             TypeAsString = "$Type";
+            Description = "$Description"
             Choices = $null
         }
         Set-PnPField -Identity $InternalName -Values $emptyHashTable
@@ -87,6 +91,7 @@ function CreateChoiceColumn($Row) {
             Title = "$DisplayName";
             Group = "$Group";
             TypeAsString = "$Type";
+            Description = "$Description"
             Choices = $formattedChoices
         }
         Set-PnPField -Identity $InternalName -Values $hashTable2
@@ -94,22 +99,24 @@ function CreateChoiceColumn($Row) {
 }
 
 function CreateCalculatedColumn($Row) {
-    Write-Host "`t> Creating Column..." -ForegroundColor DarkYellow
+    Write-Host "`t> Creating/Updating Column..." -ForegroundColor DarkYellow
     $Group = $Row.Group
     $InternalName = $Row.InternalName
     $DisplayName = $Row.DisplayName
     $Type = $Row.Type
+    $Description = $Row.Description
     $Formula = "=" + $Row.Formula
 
     $hashTable = @{
         Title = "$DisplayName";
         Group = "$Group";
         TypeAsString = "$Type";
+        Description = "$Description"
         Formula = "$Formula"
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type  -Formula $Formula -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type  -Description $Description -Formula $Formula -ErrorAction Stop
     }
     catch {
         Set-PnPField -Identity $InternalName -Values $hashTable
