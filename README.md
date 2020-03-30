@@ -91,6 +91,28 @@ Bloops|BloopColumn08|Bloop08|Calculated||[Title]
         - Formula
         - User Message
     
+    - Allow unlimited length in document libraries
+    - Number of lines for editing
+    - Type of text
+        - Plain Text
+        - Rich Text
+        - Enhanced Rich Text
+    - Append changes to existing text?
+    
+    - Date and Time Format
+        - Date Only
+        - Date & Time
+    - Display Format
+        - Standard
+        - Friendly
+    - Default Value:
+        - None
+        - Today's Date
+        - M/D/YYY
+        - Calculated Value
+        
+    
+    
 
 
 ***
