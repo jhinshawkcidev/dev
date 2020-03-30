@@ -66,6 +66,7 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-UpdateSiteColumns.ps
 - Replace the `$sheet` variable with your .xlsx path, sample format for the $sheet:
     
 Group|InternalName|DisplayName|Type|Choices|Formula
+-----|------------|-----------|----|-------|-------
 Bloops|BloopColumn01|Bloop01|Text		
 Bloops|BloopColumn02|Bloop02|Note		
 Bloops|BloopColumn03|Bloop03|DateTime		
