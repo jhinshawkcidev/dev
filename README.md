@@ -65,8 +65,8 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-UpdateSiteColumns.ps
 - Replace the `$siteUrl` variable with your SharePoint site
 - Replace the `$sheet` variable with your .xlsx path, sample format for the $sheet:
 
-Group|InternalName|DisplayName|Type|Choices|Formula
------|------------|-----------|----|-------|-------
+Group|InternalName|DisplayName|Type|Choices|Formula|Description
+-----|------------|-----------|----|-------|-------|-----------
 Bloops|BloopColumn01|Bloop01|Text		
 Bloops|BloopColumn02|Bloop02|Note		
 Bloops|BloopColumn03|Bloop03|DateTime		
