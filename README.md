@@ -60,7 +60,7 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFiel
 
 ***
 ### `SPOScript-UpdateSiteColumns.ps1`
-https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-DocumentListItemFieldValues.ps1
+https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-UpdateSiteColumns.ps1
 - Creates or updates existing site columns based on .xlsx documentation
 - Replace the `$siteUrl` variable with your SharePoint site
 - Replace the `$sheet` variable with your .xlsx path, Column Headers should include:
