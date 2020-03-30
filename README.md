@@ -77,8 +77,6 @@ Bloops|BloopColumn08|Bloop08|Calculated||[Title]
 
 - This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on an excel table. I will continue testing this script out to see if it will allow for greater functionality.  
 - Additional Column settings not included but should be::
-    - Description 
-    - Enforce Unique Values
-    - Default Value
+
 
 ***
