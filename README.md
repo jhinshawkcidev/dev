@@ -80,7 +80,5 @@ Bloops|BloopColumn08|Bloop08|Calculated||[Title]
     - Description 
     - Enforce Unique Values
     - Default Value
-        - Text
-        - Calculated
 
 ***
