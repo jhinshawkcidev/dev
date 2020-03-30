@@ -65,15 +65,15 @@ https://github.com/jhinshawkcidev/dev/blob/master/SPOScript-UpdateSiteColumns.ps
 - Replace the `$siteUrl` variable with your SharePoint site
 - Replace the `$sheet` variable with your .xlsx path, sample format for the $sheet:
     
-Group	InternalName	DisplayName	Type	    Choices	    Formula
-Bloops	BloopColumn01	Bloop01	    Text		
-Bloops	BloopColumn02	Bloop02	    Note		
-Bloops	BloopColumn03	Bloop03	    DateTime		
-Bloops	BloopColumn04	Bloop04	    Choice	    A, B, C	
-Bloops	BloopColumn05	Bloop05	    Boolean		
-Bloops	BloopColumn06	Bloop06	    Number		
-Bloops	BloopColumn07	Bloop07	    Currency		
-Bloops	BloopColumn08	Bloop08	    Calculated		        [Title]
+Group|InternalName|DisplayName|Type|Choices|Formula
+Bloops|BloopColumn01|Bloop01|Text		
+Bloops|BloopColumn02|Bloop02|Note		
+Bloops|BloopColumn03|Bloop03|DateTime		
+Bloops|BloopColumn04|Bloop04|Choice|A, B, C	
+Bloops|BloopColumn05|Bloop05|Boolean		
+Bloops|BloopColumn06|Bloop06|Number		
+Bloops|BloopColumn07|Bloop07|Currency		
+Bloops|BloopColumn08|Bloop08|Calculated||[Title]
 
  - This script lacks the functionality to fine-tune site columns - it's really only good for "template-izing" your site columns based on an excel table. I will continue testing this script out to see if it will allow for greater functionality.
 
