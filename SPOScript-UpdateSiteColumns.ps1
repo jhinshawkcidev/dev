@@ -44,12 +44,12 @@ function CreateColumn($Row) {
     $hashTable = @{
         Title = "$DisplayName";
         Group = "$Group";
-        TypeAsString = "$Type"
+        TypeAsString = "$Type";
         Description = "$Description"
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Description $Description -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Description $Description -Type $Type -ErrorAction Stop
     }
     catch {
         Set-PnPField -Identity $InternalName -Values $hashTable
@@ -82,7 +82,7 @@ function CreateChoiceColumn($Row) {
             Title = "$DisplayName";
             Group = "$Group";
             TypeAsString = "$Type";
-            Description = "$Description"
+            Description = "$Description";
             Choices = $null
         }
         Set-PnPField -Identity $InternalName -Values $emptyHashTable
@@ -91,7 +91,7 @@ function CreateChoiceColumn($Row) {
             Title = "$DisplayName";
             Group = "$Group";
             TypeAsString = "$Type";
-            Description = "$Description"
+            Description = "$Description";
             Choices = $formattedChoices
         }
         Set-PnPField -Identity $InternalName -Values $hashTable2
@@ -111,7 +111,7 @@ function CreateCalculatedColumn($Row) {
         Title = "$DisplayName";
         Group = "$Group";
         TypeAsString = "$Type";
-        Description = "$Description"
+        Description = "$Description";
         Formula = "$Formula"
     }
 
