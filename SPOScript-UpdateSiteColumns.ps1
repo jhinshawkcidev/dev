@@ -40,16 +40,23 @@ function CreateColumn($Row) {
     $DisplayName = $Row.DisplayName
     $Type = $Row.Type
     $Description = $Row.Description
+    if ($Row.Required -match "Yes") {
+        $Required = [bool]1
+    }
+    else {
+        $Required = [bool]0
+    }
 
     $hashTable = @{
         Title = "$DisplayName";
         Group = "$Group";
         TypeAsString = "$Type";
-        Description = "$Description"
+        Description = "$Description";
+        Required = $Required
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Description $Description -Type $Type -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -ErrorAction Stop
     }
     catch {
         Set-PnPField -Identity $InternalName -Values $hashTable
@@ -63,7 +70,7 @@ function CreateChoiceColumn($Row) {
     $InternalName = $Row.InternalName
     $DisplayName = $Row.DisplayName
     $Type = $Row.Type
-    $Description = $Row.Description
+
     $rawChoices = $Row.Choices
     if ($rawChoices -Match ", ") {
         $formattedChoices = $rawChoices -split ", "
@@ -73,7 +80,7 @@ function CreateChoiceColumn($Row) {
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Description $Description -Choices $formattedChoices -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Choices $formattedChoices -ErrorAction Stop
     }
 
     catch {
@@ -82,7 +89,6 @@ function CreateChoiceColumn($Row) {
             Title = "$DisplayName";
             Group = "$Group";
             TypeAsString = "$Type";
-            Description = "$Description";
             Choices = $null
         }
         Set-PnPField -Identity $InternalName -Values $emptyHashTable
@@ -91,7 +97,6 @@ function CreateChoiceColumn($Row) {
             Title = "$DisplayName";
             Group = "$Group";
             TypeAsString = "$Type";
-            Description = "$Description";
             Choices = $formattedChoices
         }
         Set-PnPField -Identity $InternalName -Values $hashTable2
@@ -104,19 +109,18 @@ function CreateCalculatedColumn($Row) {
     $InternalName = $Row.InternalName
     $DisplayName = $Row.DisplayName
     $Type = $Row.Type
-    $Description = $Row.Description
+
     $Formula = "=" + $Row.Formula
 
     $hashTable = @{
         Title = "$DisplayName";
         Group = "$Group";
         TypeAsString = "$Type";
-        Description = "$Description";
         Formula = "$Formula"
     }
 
     try {
-        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type  -Description $Description -Formula $Formula -ErrorAction Stop
+        Add-PnPField -Group $Group -InternalName $InternalName -DisplayName $DisplayName -Type $Type -Formula $Formula -ErrorAction Stop
     }
     catch {
         Set-PnPField -Identity $InternalName -Values $hashTable
